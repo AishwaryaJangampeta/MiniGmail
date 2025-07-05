@@ -1,10 +1,12 @@
 services:
   - type: web
     name: mini-gmail-backend
-    env: java
+    runtime: java
     branch: main
+    plan: free
+    rootDir: backend
     buildCommand: ./mvnw clean install
     startCommand: java -jar target/backend-0.0.1-SNAPSHOT.jar
-    rootDir: backend
     envVars:
       - key: MONGO_URI
+        value: ""
