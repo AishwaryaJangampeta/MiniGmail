@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Compose - Mini Gmail</title>
+    <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar">
+        <a href="home.html">
+           <img src="images/MiniGmail_Logo.png" alt="Mini Gmail Logo" width="150px" style="cursor:pointer;">
+        </a>
+        <nav>
+            <a href="inbox.html"><img src="images/Inbox_NavBar.png" width="20px"> Inbox</a>
+            <a href="sent.html" id="sentLink"><img src="images/Send_NavBar2.png" width="20px">   Sent</a>
+            <a href="compose.html">🖊 Compose</a>
+            <a href="login.html" id="logout">⏻ Logout</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="compose-wrapper">
+            <!-- <div class="compose-header">New Message</div> -->
+             <h1>New Message</h1>
+            <form id="composeForm" class="compose-body" autocomplete="off">
+                <input type="email" id="to" placeholder="To" required />
+                <input type="text" id="subject" placeholder="Subject" required />
+                <div id="body" contenteditable="true" class="editable-body" data-placeholder="Write your message..."></div>
+                <div class="compose-footer">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+

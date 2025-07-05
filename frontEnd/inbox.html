@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inbox - Mini Gmail</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <a href="home.html">
+        <img src="images/MiniGmail_Logo.png" alt="Mini Gmail Logo" width="150px" style="cursor:pointer;">
+      </a>
+      <nav>
+        <a href="inbox.html"><img src="images/Inbox_NavBar.png" width="20px"> Inbox</a>
+        <a href="sent.html" id="sentLink"><img src="images/Send_NavBar2.png" width="20px">   Sent</a>
+        <a href="compose.html">🖊 Compose</a>
+        <a href="login.html" id="logout">⏻ Logout</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h1>Inbox</h1>
+      <table id="inboxTable">
+        <thead>
+          <tr><th>From</th><th>Subject</th><th>Date</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

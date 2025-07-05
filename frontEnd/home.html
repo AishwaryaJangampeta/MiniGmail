@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Gmail</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="images/MiniGmail_Logo.png" alt="Mini Gmail Logo" width="150px">
+      <nav>
+        <a href="inbox.html" id="inboxLink"><img src="images/Inbox_NavBar.png" width="20px">  Inbox</a>
+        <a href="sent.html" id="sentLink"><img src="images/Send_NavBar2.png" width="20px">   Sent</a>
+<!--        <a href="sent.html" id="sentLink">📤 Sent</a>-->
+        <a href="compose.html" id="composeLink">🖊 Compose</a>
+<!--        <a href="compose.html" id="composeLink"><img src="images/Compose.png" width="20px">Compose</a>-->
+        <a href="login.html" id="logout">⏻ Logout</a>
+      </nav>
+    </aside>
+
+    <main class="main-content" id="mainContent">
+      <p class="greeting" id="greeting">Hi!</p>
+      <h1>Welcome to Mini Gmail</h1>
+      <p class="subtitle">Your lightweight personal messaging system</p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon"><img src="images/Inbox_main.png"></div>
+          <div class="count">10</div>
+          <div class="label">Inbox</div>
+        </div>
+        <div class="card">
+          <div class="icon"><img src="images/Sent_home2.png" width="45px"></div>
+          <div class="count">5</div>
+          <div class="label">Sent</div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a href="inbox.html" class="btn">Go to Inbox</a>
+        <a href="compose.html" class="btn">Compose Email</a>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

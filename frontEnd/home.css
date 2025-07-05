@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #d3e5f6, #f0f4f8);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #1a2e3b;
+  color: white;
+  width: 220px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 12px 0;
+  margin: 5px 0;
+  border-radius: 6px;
+  padding-left: 12px;
+  transition: background 0.2s;
+  font-size: large;
+}
+
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #2f4554;
+   color: white;
+}
+
+.main-content {
+  background-image: url("MiniGmailBackground.png");
+  flex: 1;
+  padding: 30px 50px;
+  background-color: #f1f3f4;
+  overflow-y: auto;
+
+}
+
+.main-content h1 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.greeting {
+  font-size: 1.5rem;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 140px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card .icon {
+  font-size: 2rem;
+}
+
+.card .count {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.card .label {
+  color: #555;
+}
+
+.actions{
+   display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.actions .btn {
+  display: inline-block;
+  background-color: #27485e;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: background 0.3s;
+
+}
+
+.actions .btn:hover {
+  background-color: #285bb5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #f6f6f6;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+  font-size: 15px;
+
+  white-space: nowrap;        /* prevent wrapping */
+  overflow: hidden;           /* hide anything beyond cell width */
+  text-overflow: ellipsis;    /* show "..." if text overflows */
+  max-width: 250px;           /* you can adjust this width */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f6f6f6; 
+}
+
+tbody tr {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+tbody tr:hover {
+  background-color: #e0e7f0;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+    .compose-header {
+      background-color: #f1f3f4;
+      padding: 12px 16px;
+      border-bottom: 1px solid #ccc;
+      font-size: x-large;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .compose-body {
+      padding: 16px;
+    }
+
+    .compose-body input,
+    .compose-body textarea {
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+
+    }
+
+    .compose-footer {
+      padding: 12px 16px;
+     /* border-top: 1px solid #ccc; */
+      /* background-color: #f1f3f4; */
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .compose-footer button {
+      background-color: #27485e;
+      color: white;
+      border: solid white 2px;
+      padding: 6.5px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+     
+
+    }
+
+    .compose-footer button:hover {
+      background-color: white;
+      color: #27485e;
+      border: solid #27485e 2px;
+       font-weight: bold;
+    }
+
+    .editable-body {
+      min-height: 200px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      outline: none;
+      font-size: 1rem;
+      background-color: white;
+    }
+
+    .editable-body:empty:before {
+      content: attr(data-placeholder);
+      color: #aaa;
+    }
+
+
+.data-msg{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: white;
+
+
+}

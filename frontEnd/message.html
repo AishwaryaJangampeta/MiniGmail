@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Message - Mini Gmail</title>
+    <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar">
+        <a href="home.html">
+           <img src="images/MiniGmail_Logo.png" alt="Mini Gmail Logo" width="150px" style="cursor:pointer;">
+        </a>
+        <nav>
+            <a href="inbox.html">📥 Inbox</a>
+            <a href="sent.html">📤 Sent</a>
+            <a href="compose.html">🖊️ Compose</a>
+            <a href="login.html" id="logoutBtn">⏻ Logout</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <h2>Message</h2>
+        <hr>
+        <p><strong>From:</strong> <span id="from"></span></p>
+        <p><strong>To:</strong> <span id="to"></span></p>
+        <p><strong>Subject:</strong> <span id="subject"></span></p>
+        <p><strong>Date:</strong> <span id="date"></span></p>
+        <div class="data-msg">
+             <p id="body"></p>
+        </div>
+        <div class="compose-footer">
+           <button id="replyBtn">Reply</button>
+           <button id="deleteBtn">Delete</button>
+           <button onclick="window.location.href='inbox.html'">Back</button>
+        </div>
+    </main>
+</div>
+
+<script src="message.js"></script>
+</body>
+</html>
