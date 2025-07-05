@@ -1,7 +1,6 @@
 services:
   - type: web
     name: mini-gmail-backend
-    runtime: java
     branch: main
     plan: free
     rootDir: backend
