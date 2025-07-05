@@ -1,0 +1,7 @@
+com\minigmail\model\User.class
+com\minigmail\model\Email.class
+com\minigmail\repository\EmailRepository.class
+com\minigmail\repository\UserRepository.class
+com\minigmail\controller\UserController.class
+com\minigmail\MiniGmailApplication.class
+com\minigmail\controller\EmailController.class
