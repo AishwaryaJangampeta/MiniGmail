@@ -19,7 +19,7 @@ if(signupForm) {
     };
 
     try {
-      const response = await fetch("http://localhost:8081/api/signup", {
+      const response = await fetch("https://minigmail.onrender.com/api/signup", {
         method: "POST",
         headers: {
           "Content-Type" : "application/json"
@@ -61,7 +61,7 @@ if(loginForm) {
     };
 
     try{
-       const response = await fetch("http://localhost:8081/api/login", {
+       const response = await fetch("https://minigmail.onrender.com/api/login", {
         method: "POST",
         headers: {
           "Content-Type" : "application/json"
@@ -111,7 +111,7 @@ if(composeForm){
     };
 
     try{
-      const response = await fetch("http://localhost:8081/api/send", {
+      const response = await fetch("https://minigmail.onrender.com/api/send", {
         method: "POST",
         headers: {
           "Content-Type":"application/json"
@@ -138,7 +138,7 @@ async function loadInbox() {
   }
 
   try{
-    const response = await fetch(`http://localhost:8081/api/inbox?email=${userEmail}`);
+    const response = await fetch(`https://minigmail.onrender.com/api/inbox?email=${userEmail}`);
     const emails = await response.json();
 
     const inboxTable = document.getElementById("inboxTable").getElementsByTagName("tbody")[0];
@@ -187,7 +187,7 @@ async function loadSent() {
   }
 
   try {
-    const response = await fetch(`http://localhost:8081/api/sent?email=${userEmail}`);
+    const response = await fetch(`https://minigmail.onrender.com/api/sent?email=${userEmail}`);
     const emails = await response.json();
 
     const sentTable = document.getElementById("sentTable")?.getElementsByTagName("tbody")[0];

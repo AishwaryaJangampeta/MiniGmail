@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!confirmDelete) return;
 
       try {
-        const response = await fetch(`http://localhost:8081/api/delete?id=${email.id}`, {
+        const response = await fetch(`https://minigmail.onrender.com/api/delete?id=${email.id}`, {
           method: "PUT"
         });
 
