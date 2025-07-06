@@ -1,5 +1,6 @@
 
 body {
+  background-image: url("images/MiniGmailBackground.png");
   display: flex;
   font-family: Arial;
   justify-content: center; 
