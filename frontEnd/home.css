@@ -42,7 +42,7 @@ body {
 }
 
 .main-content {
-  background-image: url("MiniGmailBackground.png");
+  background-image: url("images/MiniGmailBackground.png");
   flex: 1;
   padding: 30px 50px;
   background-color: #f1f3f4;
@@ -196,14 +196,15 @@ tbody tr:hover {
     }
 
     .compose-body input,
-    .compose-body textarea {
+    .compose-body textarea,
+    .compose-body .editable-body {
       width: 100%;
       margin-bottom: 12px;
       padding: 10px;
       border: 1px solid #ddd;
       border-radius: 4px;
       font-size: 14px;
-
+      box-sizing: border-box;
     }
 
     .compose-footer {
@@ -235,7 +236,7 @@ tbody tr:hover {
 
     .editable-body {
       min-height: 200px;
-      border: 1px solid #ccc;
+      border: 2px solid #ccc;
       padding: 10px;
       outline: none;
       font-size: 1rem;
