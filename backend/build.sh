@@ -2,21 +2,24 @@
 
 echo "🔧 Starting custom build script..."
 
-# Define Java 17 install location
+# Define Java install path
 export JAVA_HOME="/opt/render/project/java"
 export PATH="$JAVA_HOME/bin:$PATH"
 
-# Download and install Java 17
-echo "📦 Downloading and installing Java 17..."
-curl -L -o jdk.tar.gz https://download.java.net/java/GA/jdk17/0d1cfde4252546c6931946de8db48ee2/35/GPL/openjdk-17_linux-x64_bin.tar.gz
+# Download Java 17 from a working source (Adoptium)
+echo "📦 Downloading Java 17..."
+curl -L -o jdk.tar.gz https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.11_9.tar.gz
 
+# Extract Java
+echo "📦 Extracting JDK..."
 mkdir -p "$JAVA_HOME"
 tar -xzf jdk.tar.gz --strip-components=1 -C "$JAVA_HOME"
 
+# Verify Java is installed
 echo "✅ Java installed at $JAVA_HOME"
 java -version
 
-# Run Maven Wrapper to build the project
+# Run Maven build
 echo "🚀 Running Maven build..."
 ./mvnw clean install
 
